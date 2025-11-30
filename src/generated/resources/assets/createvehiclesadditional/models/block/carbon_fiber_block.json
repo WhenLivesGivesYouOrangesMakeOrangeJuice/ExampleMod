@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "createvehiclesadditional:block/carbon_fiber_block"
+  }
+}

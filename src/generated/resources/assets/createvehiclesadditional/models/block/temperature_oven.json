@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "createvehiclesadditional:block/temperature_oven_bottom",
+    "east": "createvehiclesadditional:block/temperature_oven_side",
+    "north": "createvehiclesadditional:block/temperature_oven_front",
+    "south": "createvehiclesadditional:block/temperature_oven_side",
+    "up": "createvehiclesadditional:block/temperature_oven_top",
+    "west": "createvehiclesadditional:block/temperature_oven_side"
+  }
+}
