@@ -1,6 +1,9 @@
 package de.srr.createvehiclesadditional;
 
+import de.srr.createvehiclesadditional.Blocks.ModBlocks;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -22,10 +25,20 @@ public class CreateVehiclesAdditionalClient {
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
     }
 
+    //setRenderLayer on line 37 is flagged as deprecated (needs to be changed in future)
+    @SuppressWarnings("deprecation")
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         // Some client setup code
         CreateVehiclesAdditional.LOGGER.info("HELLO FROM CLIENT SETUP");
         CreateVehiclesAdditional.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
+        // to load transparent Textures correctly
+        event.enqueueWork(() -> {
+           //add new Block with transparent Texture here
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ELEMENT_SEPARATOR.get(), RenderType.cutout() // oder translucent()
+
+            );
+        });
     }
 }

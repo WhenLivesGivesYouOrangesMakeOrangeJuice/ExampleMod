@@ -29,6 +29,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.TEMPERATURE_OVEN.get());
         dropSelf(ModBlocks.CARBON_FIBER_BLOCK.get());
         dropSelf(ModBlocks.GAS_PIPE.get());
+        dropSelf(ModBlocks.ELEMENT_SEPARATOR.get());
 
         add(ModBlocks.BLOCK_OF_CARBON.get(),
                 block -> createMultipleOreDrops(ModBlocks.BLOCK_OF_CARBON.get(), ModItems.CARBON.get(), 4, 9));

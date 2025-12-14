@@ -38,6 +38,10 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.COPPER)));
 
+    public static final DeferredBlock<Block> ELEMENT_SEPARATOR = registerBlock("element_separator",
+            () -> new ElementSeparatorBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE))); //change later
+
 
 
 
