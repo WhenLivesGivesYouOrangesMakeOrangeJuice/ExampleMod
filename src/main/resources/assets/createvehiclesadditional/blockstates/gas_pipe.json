@@ -1,67 +1,216 @@
 {
   "variants": {
-
-    "north=false,south=false,east=false,west=false,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe"
+    "north=false,south=false,east=false,west=false,up=false,down=false,facing=north": {
+      "model": "createvehiclesadditional:block/gas_pipe_single", "y": 0
     },
-
+    "north=false,south=false,east=false,west=false,up=false,down=false,facing=south": {
+      "model": "createvehiclesadditional:block/gas_pipe_single", "y": 0
+    },
+    "north=false,south=false,east=false,west=false,up=false,down=false,facing=east": {
+      "model": "createvehiclesadditional:block/gas_pipe_single", "y": 90
+    },
+    "north=false,south=false,east=false,west=false,up=false,down=false,facing=west": {
+      "model": "createvehiclesadditional:block/gas_pipe_single", "y": 90
+    },
+    "north=false,south=false,east=false,west=false,up=false,down=false,facing=up": {
+      "model": "createvehiclesadditional:block/gas_pipe_single", "x": 90
+    },
+    "north=false,south=false,east=false,west=false,up=false,down=false,facing=down": {
+      "model": "createvehiclesadditional:block/gas_pipe_single", "x": 90
+    },
     "north=true,south=false,east=false,west=false,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_connected_end",
-      "y": 180
+      "model": "createvehiclesadditional:block/gas_pipe_end", "y": 180
     },
     "north=false,south=true,east=false,west=false,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_connected_end"
+      "model": "createvehiclesadditional:block/gas_pipe_end"
     },
     "north=false,south=false,east=true,west=false,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_connected_end",
-      "y": 270
+      "model": "createvehiclesadditional:block/gas_pipe_end", "y": 270
     },
     "north=false,south=false,east=false,west=true,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_connected_end",
-      "y": 90
+      "model": "createvehiclesadditional:block/gas_pipe_end", "y": 90
     },
-
+    "north=false,south=false,east=false,west=false,up=true,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_end", "x": 90
+    },
+    "north=false,south=false,east=false,west=false,up=false,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_end", "x": 270
+    },
     "north=true,south=true,east=false,west=false,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_connected"
+      "model": "createvehiclesadditional:block/gas_pipe_straight"
     },
     "north=false,south=false,east=true,west=true,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_connected",
-      "y": 90
+      "model": "createvehiclesadditional:block/gas_pipe_straight", "y": 90
     },
-
+    "north=false,south=false,east=false,west=false,up=true,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_straight", "x": 90
+    },
     "north=true,south=false,east=true,west=false,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_corner",
-      "y": 90
-    },
-    "north=false,south=true,east=true,west=false,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_corner",
-      "y": 180
-    },
-    "north=false,south=true,east=false,west=true,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_corner",
-      "y": 270
+      "model": "createvehiclesadditional:block/gas_pipe_elbow", "y": 0
     },
     "north=true,south=false,east=false,west=true,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_corner",
-      "y": 0
+      "model": "createvehiclesadditional:block/gas_pipe_elbow", "y": 270
     },
-
+    "north=true,south=false,east=false,west=false,up=true,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow", "x": 270,"y": 270
+    },
+    "north=true,south=false,east=false,west=false,up=false,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow", "x": 90, "y": 270
+    },
+    "north=false,south=true,east=true,west=false,up=false,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow", "y": 90
+    },
+    "north=false,south=true,east=false,west=true,up=false,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow", "y": 180
+    },
+    "north=false,south=true,east=false,west=false,up=true,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow", "x": 270,"y": 90
+    },
+    "north=false,south=true,east=false,west=false,up=false,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow", "x": 90, "y": 90
+    },
+    "north=false,south=false,east=true,west=false,up=true,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow", "x": 270, "y": 0
+    },
+    "north=false,south=false,east=true,west=false,up=false,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow", "x": 90, "y": 0
+    },
+    "north=false,south=false,east=false,west=true,up=true,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow", "x": 270, "y": 180
+    },
+    "north=false,south=false,east=false,west=true,up=false,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow", "x": 90,"y": 180
+    },
     "north=true,south=true,east=true,west=false,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_t_part",
-      "y": 90
+      "model": "createvehiclesadditional:block/gas_pipe_t", "y": 90
     },
     "north=false,south=true,east=true,west=true,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_t_part",
-      "y": 180
+      "model": "createvehiclesadditional:block/gas_pipe_t", "y": 180
     },
     "north=true,south=false,east=true,west=true,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_t_part",
-      "y": 0
+      "model": "createvehiclesadditional:block/gas_pipe_t"
     },
     "north=true,south=true,east=false,west=true,up=false,down=false": {
-      "model": "createvehiclesadditional:block/gas_pipe_t_part",
-      "y": 270
-    }
+      "model": "createvehiclesadditional:block/gas_pipe_t", "y": 270
+    },
+    "north=true,south=true,east=false,west=false,up=true,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_t", "x":270, "y": 90
+    },
+    "north=false,south=false,east=true,west=true,up=true,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_t", "x": 270,"y": 180
+    },
+    "north=true,south=true,east=false,west=false,up=false,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_t", "x":90, "y": 90
+    },
+    "north=false,south=false,east=true,west=true,up=false,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_t", "x": 90,"y": 0
+    },
+    "north=false,south=true,east=false,west=false,up=true,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_t_north", "y": 180
+    },
+    "north=true,south=false,east=false,west=false,up=true,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_t_north", "y": 0
+    },
+    "north=false,south=false,east=false,west=true,up=true,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_t_north", "y": 270
+    },
+    "north=false,south=false,east=true,west=false,up=true,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_t_north", "y": 90
+    },
+    "north=true,east=true,up=false,south=false,west=false,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow_3d", "x": 180, "y": 180
+    },
+    "north=true,east=true,up=true,south=false,west=false,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow_3d", "y": 90
+    },
+    "north=true,east=false,up=true,south=false,west=true,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow_3d", "y": 0
+    },
+    "north=true,east=false,up=false,south=false,west=true,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow_3d", "x": 180, "y": 90
+    },
+    "north=false,east=true,up=false,south=true,west=false,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow_3d", "x": 180, "y": 270
+    },
+    "north=false,east=true,up=true,south=true,west=false,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow_3d", "y": 180
+    },
+    "north=false,east=false,up=true,south=true,west=true,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow_3d", "y": 270
+    },
+    "north=false,east=false,up=false,south=true,west=true,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_elbow_3d", "x": 180, "y": 0
+    },
+    "up=false,down=false,west=true,east=true,north=true,south=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_cross", "x": 0
+    },
+    "up=true,down=true,west=true,east=true,north=false,south=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_cross", "x": 90
+    },
+    "up=true,down=true,west=false,east=false,north=true,south=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_cross", "x": 90, "y": 90
+    },
+    "up=true,down=false,west=true,east=true,north=false,south=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_4", "x": 270
+    },
+    "up=true,down=false,west=true,east=true,north=true,south=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_4", "x": 270, "y": 180
+    },
+    "up=false,down=true,west=true,east=true,north=false,south=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_4", "x": 90, "y": 180
+    },
+    "up=false,down=true,west=true,east=true,north=true,south=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_4", "x": 90, "y": 0
+    },
+    "up=true,down=false,west=false,east=true,north=true,south=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_4", "x": 270, "y": 270
+    },
+    "up=false,down=true,west=false,east=true,north=true,south=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_4", "x": 90, "y": 90
+    },
+    "up=true,down=false,west=true,east=false,north=true,south=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_4", "x": 270, "y": 90
+    },
+    "up=false,down=true,west=true,east=false,north=true,south=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_4", "x": 90, "y": 270
+    },
 
+
+    "up=true,down=true,west=true,east=false,north=true,south=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_4_y", "x": 0, "y": 270
+    },
+    "up=true,down=true,west=false,east=true,north=true,south=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_4_y", "x": 0, "y": 0
+    },
+    "up=true,down=true,west=false,east=true,north=false,south=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_4_y", "x": 0, "y": 90
+    },
+    "up=true,down=true,west=true,east=false,north=false,south=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_4_y", "x": 0, "y": 180
+    },
+
+
+
+    "north=true,south=true,east=true,west=true,up=true,down=false": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_5", "x": 0
+    },
+    "north=true,south=true,east=true,west=true,up=false,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_5", "x": 180
+    },
+    "north=true,south=true,east=true,west=false,up=true,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_5", "x": 90, "y": 90
+    },
+    "north=true,south=true,east=false,west=true,up=true,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_5", "x": 270, "y": 90
+    },
+    "north=true,south=false,east=true,west=true,up=true,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_5", "x": 90
+    },
+    "north=false,south=true,east=true,west=true,up=true,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_5", "x": 270
+    },
+    "north=true,south=true,east=true,west=true,up=true,down=true": {
+      "model": "createvehiclesadditional:block/gas_pipe_junction_6"
+    }
   }
 }

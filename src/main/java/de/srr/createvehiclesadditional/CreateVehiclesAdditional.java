@@ -114,6 +114,9 @@ public class CreateVehiclesAdditional {
             event.accept(ModItems.CARBON_ALLOY.get());
             event.accept(ModItems.CARBON_SHEET.get());
         }
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.INCA_KOLA_BOTTLE.get());
+        }
 
     }
 

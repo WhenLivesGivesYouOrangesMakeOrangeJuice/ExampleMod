@@ -19,11 +19,5 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CARBON_ALLOY.get());
         basicItem(ModItems.CARBON_SHEET.get());
         basicItem(ModItems.CARBON_FIBER_MASS.get());
-        basicItem(ModItems.GAS_TANK.get());
-        basicItem(ModItems.HYDROGEN_TANK.get());
-        basicItem(ModItems.NITROGEN_TANK.get());
-        basicItem(ModItems.OXYGEN_TANK.get());
-        basicItem(ModItems.PROPYLENE_TANK.get());
-        basicItem(ModItems.SULFUR_TANK.get());
     }
 }

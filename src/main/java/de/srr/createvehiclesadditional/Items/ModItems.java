@@ -47,11 +47,10 @@ public class ModItems{
             new Item.Properties()
     );
 
-    public static final DeferredItem<Item> CREATE_TEST_ITEM = ITEMS.registerItem(
-            "create_test_item",
+    public static final DeferredItem<Item> INCA_KOLA_BOTTLE = ITEMS.registerItem(
+            "inca_kola_bottle",
             Item::new,
-            new Item.Properties()
-
+            new Item.Properties().food(ModFoodProperties.INCA_KOLA_BOTTLE)
     );
 
     public static final DeferredItem<Item> GAS_TANK = ITEMS.registerItem(

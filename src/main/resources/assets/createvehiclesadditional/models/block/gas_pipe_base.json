@@ -1,0 +1,6 @@
+{
+  "format_version": "1.9.0",
+  "textures": {
+    "particle": "createvehiclesadditional:block/gas_pipe_particle"
+  }
+}
